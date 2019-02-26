@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
+.flex-container {
+   display: flex;
 
+        flex-wrap: wrap;
+}
+.flex-container > div {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+   flex: 1 1 25%;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +42,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+#game {
+    width: 600px;
+    height: 600px;
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+
+    position: absolute;
+    display: block;
+    background-color: white;
+}
+
+#grid {
+    width: 378px;
+    height: 395px;
+
+    margin-left: 20px;
+    margin-top: 50px;
+
+    border: 3px solid #000;
+}
+
+
+input {
+    text-align: center;
+    font-size: 30px;
+    width:40px;
+    height:40px;
+    display:block;
+    border: 1px solid black;
+}
+.margin{
+  margin-bottom: 20px;
+}
+.cell{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.cell:nth-child(3n+1){
+    clear:both;
+}
+.U{
+  background-color: white;
+}
+.D{
+  background-color: yellow;
+}
+.B{
+  background-color: orange;
+}
+.F{
+  background-color: red;
+}
+.L{
+  background-color: green;
+}
+.R{
+  background-color: blue;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
